@@ -1,15 +1,19 @@
 package LSOLID.Exemplo1;
 
-public class Quadrado extends Retangulo {
-    @Override
-    public void setLargura(double largura) {
-        this.largura = largura;
-        this.altura = largura; // Quadrado obriga altura = largura
+public class Quadrado implements FormaGeometrica {
+
+    private double lado;
+
+    public double getLado() {
+        return lado;
+    }
+
+    public void setLado(double lado) {
+        this.lado = lado;
     }
 
     @Override
-    public void setAltura(double altura) {
-        this.altura = altura;
-        this.largura = altura; // Quadrado obriga largura = altura
+    public double calcularArea(double altura, double largura) {
+        return lado*lado;
     }
 }
