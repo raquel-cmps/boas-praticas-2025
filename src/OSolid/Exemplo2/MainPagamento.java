@@ -1,4 +1,4 @@
-package atv1;
+package OSolid.Exemplo2;
 
 public class MainPagamento {
     public static void main(String[] args) {
