@@ -38,13 +38,6 @@ As classes devem depender de interfaces ou classes abstratas, e não de classes 
 
 ---
 
-## 📁 Estrutura do Projeto
-
-- `exemplos/` — Contém exemplos simples e comentados de cada princípio SOLID aplicados na prática.
-- `README.md` — Explicação teórica dos princípios SOLID.
-
----
-
 ## 👨‍💻 Autor
 
 Este projeto foi desenvolvido como parte da disciplina de **Boas Práticas de Programação** do curso de **Ciência da Computação**.
