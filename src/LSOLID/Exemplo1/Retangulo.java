@@ -1,6 +1,6 @@
 package LSOLID.Exemplo1;
 
-public class Retangulo {
+public class Retangulo implements FormaGeometrica{
     protected double largura;
     protected double altura;
 
@@ -20,8 +20,9 @@ public class Retangulo {
         return altura;
     }
 
-    public double getArea() {
-        return largura * altura;
+    @Override
+    public double calcularArea(double altura, double largura) {
+        return altura*largura;
     }
 }
 
