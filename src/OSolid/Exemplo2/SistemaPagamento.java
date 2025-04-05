@@ -1,16 +1,17 @@
-package OSolid.Exemplo2;
+package atv1;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class SistemaPagamento {
 
-    public void realizarPagamento(double valor, String metodo) {
-        if ("CARTAO".equalsIgnoreCase(metodo)) {
-            System.out.println("Pagamento de R$" + valor + " realizado com CARTÃO.");
-        } else if ("PIX".equalsIgnoreCase(metodo)) {
-            System.out.println("Pagamento de R$" + valor + " realizado via PIX.");
-        } else if ("BOLETO".equalsIgnoreCase(metodo)) {
-            System.out.println("Pagamento de R$" + valor + " realizado via BOLETO.");
-        } else {
-            System.out.println("Método de pagamento não suportado!");
-        }
+    public IProcessarPagamento instanciarMetodoPagamento(Pagamento metodoPagamento) {
+        Map<Pagamento, IProcessarPagamento> instancia = new HashMap<>();
+
+        instancia.put(Pagamento.CARTAO, new PagamentoCartao());
+        instancia.put(Pagamento.BOLETO, new PagamentoBoleto());
+        instancia.put(Pagamento.PIX, new PagamentoPix());
+
+        return instancia.get(metodoPagamento);
     }
 }
