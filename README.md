@@ -178,6 +178,41 @@ desnecessários. Caso você tenha um Avião, ele poderia implementar apenas Veic
 
 As classes devem depender de interfaces ou classes abstratas, e não de classes concretas. Isso promove o desacoplamento e facilita a substituição e manutenção do código.
 
+### Implementação
+```java
+public interface ILogger {
+    void gerarLog(String mensagem);
+}
+
+public class ConsoleLogger implements ILogger {
+    public void gerarLog(String mensagem) {
+        System.out.println("LOG: " + mensagem);
+    }
+}
+
+public class ServicoPagamento {
+    private final ILogger logger;
+
+    public ServicoPagamento(ILogger logger) {
+        this.logger = logger;
+    }
+
+    public void pagar(double valor) {
+        logger.gerarLog("Pagamento de R$" + valor + " realizado com sucesso!");
+    }
+}
+
+
+
+```
+
+🧠 Explicação:
+Agora, ServicoPagamento depende da interface ILogger, e não da implementação concreta. Isso permite:
+
+- Substituir facilmente o ConsoleLogger por outro tipo (FileLogger, DatabaseLogger, etc.)
+- Usar mocks em testes automatizados
+- Reduzir acoplamento e aumentar reutilização
+
 ---
 
 ## 👨‍💻 Autor
