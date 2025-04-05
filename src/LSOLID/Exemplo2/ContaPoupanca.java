@@ -13,6 +13,4 @@ public class ContaPoupanca implements IContaBancaria {
     public void depositar(double valor) {
         saldo += valor;
     }
-
-
 }
