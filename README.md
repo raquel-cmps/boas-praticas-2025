@@ -21,8 +21,7 @@ public static void main(String[] args) {
 </pre>
 
 🧠 Explicação:
-- Desta forma, a classe main fica apenas focada no fluxo principal realizando as chamas para os 
-método métodos que contém a lógica de execução.
+- Desta forma, a classe main fica apenas focada no fluxo principal realizando as chamas para os métodos que contém a lógica de execução.
 
 --- 
 
@@ -170,6 +169,8 @@ public class Carro implements VeiculoTerrestre {
 🧠 Explicação:
 - Agora, Carro implementa apenas a interface que realmente faz sentido para ele, sem ser forçado a lidar com métodos 
 desnecessários. Caso você tenha um Avião, ele poderia implementar apenas VeiculoVoador, e um Barco apenas VeiculoAquatico.
+
+---
 
 ### 🔹 D — Dependency Inversion Principle (Princípio da Inversão de Dependência)
 
