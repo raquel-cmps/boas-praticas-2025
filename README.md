@@ -215,8 +215,18 @@ Agora, ServicoPagamento depende da interface ILogger, e não da implementação 
 
 ---
 
-## 👨‍💻 Autor
+## ℹ️ Sobre o Projeto
 
-Este projeto foi desenvolvido como parte da disciplina de **Boas Práticas de Programação** do curso de **Ciência da Computação**.
+Este repositório é um **fork do projeto original disponibilizado pelo professor** Ricardo Petri da disciplina de **Boas Práticas de Programação**, do curso de **Ciência da Computação**.
+
+O trabalho tem como objetivo **resolver problemas propostos em aula**, aplicando os princípios do **SOLID** na linguagem **Java**, por meio de exemplos práticos que seguem as boas práticas de organização, legibilidade e manutenção de código.
+
+Todos os códigos foram desenvolvidos com base nas instruções do professor, adaptados e estruturados como parte do processo de aprendizado.
+
+
+## 👨‍💻 Autor(a)
+
+Este projeto foi desenvolvido por **Raquel Campos** como parte da disciplina de **Boas Práticas de Programação** do curso de **Ciência da Computação**.
 
 ---
+
